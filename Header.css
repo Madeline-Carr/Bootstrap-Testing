@@ -4,7 +4,6 @@ body{
 }
 h1{
   color: aliceblue;
-  background-color: #333;
   padding: 30px;
   margin: 0;
 }
@@ -13,4 +12,12 @@ p{
 }
 h3{
   padding-left: 30px;
+}
+
+img{
+  width: 75%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+
 }
