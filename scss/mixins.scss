@@ -1,28 +1,4 @@
-
-@mixin banner{
-  width: 100%;
-  position: relative;
-  color: white;
-  .banner-content{
-    position: absolute;
-    top: 50px;
-    width: 100%;
-  }
-  img{
-    width: 100%;
-  }
-  span{
-    font-size: 24px;
-    display: block;
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  span.title{
-    font-weight: normal;
-    margin-bottom: 30px;
-  }
-}
-
-@mixin five{
-  color: tomato;
+@mixin font{
+  font-size: 20px;
+  font-family: sans-serif;
 }
