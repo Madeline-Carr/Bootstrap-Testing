@@ -1,9 +1,13 @@
-.rule {
-  color: red;
-  a{
-    color: blue;
-    span{
-      color: pink;
-    }
-  }
+@import "variables";
+@import "mixins";
+
+p{
+  background-color: $darkColor;
+  color: $lighterColor;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+#john{
+  @include five;
 }

@@ -1,6 +1,8 @@
-.rule {
-  color: red; }
-  .rule a {
-    color: blue; }
-    .rule a span {
-      color: pink; }
+p {
+  background-color: #08162d;
+  color: #8eafe5;
+  border-radius: 10px;
+  padding: 15px; }
+
+#john {
+  color: tomato; }
