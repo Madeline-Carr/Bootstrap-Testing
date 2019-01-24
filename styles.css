@@ -10,3 +10,9 @@ body{
 .well{
     color: rgb(22, 30, 37);
 }
+table{
+    background-color: rgb(202, 202, 202);
+}
+td{
+    color: #333;
+}
