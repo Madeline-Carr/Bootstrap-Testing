@@ -93,6 +93,7 @@
             <button type="button" class="btn btn-dark">Hulk</button>
         </div>
         <hr>
+        <!-- Lists -->
         <h2>Lists</h2>
         <p>You can use the "list-group" class on a list and the "list-group-item" class on items. There are other
             classes that can also be used and there are examples in the list below.</p>
@@ -112,6 +113,31 @@
             <a href="#" class="list-group-item list-group-item-action">Second item</a>
             <a href="#" class="list-group-item list-group-item-action">Third item</a>
         </div>
+        <hr>
+        <!-- Collapsing -->
+        <h2>Collapsing</h2>
+        <p>In the example below there is a hidden div. It has the class of "collapse" so it does not initially appear
+            on the page. It could also have a class of "collapse show" which would make it appear at the start. It also
+            has an id of "demo" so it can be used with a button. </p>
+        <p>The button has an attribute called data-toggle which is set to "collapse" and a data-target attribute that
+            is set to "#demo". The data-target class is needed so the button knows what to show.</p>
+        <button data-toggle="collapse" data-target="#demo" class="btn btn btn-dark">Click me to show hidden text!</button>
+
+        <div id="demo" class="collapse">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, repudiandae rem? Unde autem
+                reiciendis dolore numquam voluptatibus veniam quo voluptas soluta facilis, doloremque quaerat mollitia
+                exodit sit sed nobis!</p>
+        </div>
+        <br>
+        <br>
+        <button data-toggle="collapse" data-target="#demo2" class="btn btn btn-dark">Click me to hide the text!</button>
+
+        <div id="demo2" class="collapse show">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, repudiandae rem? Unde autem
+                reiciendis dolore numquam voluptatibus veniam quo voluptas soluta facilis, doloremque quaerat mollitia
+                exodit sit sed nobis!</p>
+        </div>
+        <hr>
 
 
     </div>
