@@ -39,6 +39,10 @@
         <div class="col-md-12 bg-dark text-white">I am a div with the class of "col-md-12".</div>
         <div class="col-md-6 bg-dark text-white">I am a div with the class of "col-md-6".</div>
         <div class="col-md-3 bg-dark text-white">I am a div with the class of "col-md-3".</div>
+        <p>Also you should know that if you make a class for a lower screen size it will apply to greater screen sizes.
+        </p>
+        <div class="col-md-6 bg-primary text-white">So I am a div with the "col-md-6" but I will still only take up 6
+            columns on larger screens.</div>
         <!-- Typography -->
         <h2>Typography</h2>
         <p>There are many diffrent typography options in Bootstrap. You can use the class of "display-#" to make even
@@ -47,213 +51,236 @@
         <p><abbr>NASA</abbr> has the abbr tag.</p>
         <p>Code has the <code>code</code> tag.</p>
         <p>But I like the <kbd>kbd</kbd> tag more.</p>
-        <!-- Buttons -->
-        <h2>Buttons</h2>
-        <p>There are many diffrent button options. To make a Bootstrap button you need to add the class of btn to a
-            button. There are also colors you can use with button classes. For example if you have a button with the
-            class of "btn btn-primary" then that button will have a blue background and white text. Replacing primary
-            with dark will make a dark button, light will make a white button, and danger will make a red button.</p>
-        <button type="button" class="btn">Basic</button>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-secondary">Secondary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-warning">Warning</button>
-        <button type="button" class="btn btn-danger">Danger</button>
-        <button type="button" class="btn btn-dark">Dark</button>
-        <button type="button" class="btn btn-light">Light</button>
-        <button type="button" class="btn btn-link">Link</button>
-        <p>The same classes can be used on a and input tags. </p>
-        <p>You can also assign classes like "btn btn-outline-primary" which will give you an outline in the color.</p>
-        <button type="button" class="btn btn-outline-primary">Primary Outline</button>
-        <button type="button" class="btn btn-outline-danger">Danger</button>
-        <button type="button" class="btn btn-outline-success">Success</button>
-        <p>To change button size you can use "btn-lg" and "btn-sm" to make buttons larger or smaller than their
-            original size.</p>
-        <button type="button" class="btn btn-dark btn-lg">Larger Dark</button>
-        <button type="button" class="btn btn-dark">Normal Dark</button>
-        <button type="button" class="btn btn-dark btn-sm">Smaller Dark</button>
-        <p> To make a button take up the entire width of the parent you can use the "btn-block" class.</p>
-        <button type="button" class="btn btn-secondary btn-block">Secondary Block</button>
-        <hr>
-        <!-- Button Groups -->
-        <h2>Button Groups</h2>
-        <p>Using the "btn-group" class on a div with buttons in it will create a block of buttons together!</p>
-        <div class="btn-group">
-            <button type="button" class="btn btn-dark">Ironman</button>
-            <button type="button" class="btn btn-dark">Captain America</button>
-            <button type="button" class="btn btn-dark">Thor</button>
-            <button type="button" class="btn btn-dark">Hulk</button>
-        </div>
-        <p>If you want them to stack on top of each other use the "btn-group-vertical" class.</p>
-        <div class="btn-group-vertical">
-            <button type="button" class="btn btn-dark">Ironman</button>
-            <button type="button" class="btn btn-dark">Captain America</button>
-            <button type="button" class="btn btn-dark">Thor</button>
-            <button type="button" class="btn btn-dark">Hulk</button>
-        </div>
-        <p>You can change the size of the button group by using the "btn-group-lg" and "btn-group-sm" classes.</p>
-        <div class="btn-group-vertical btn-group-lg">
-            <button type="button" class="btn btn-dark">Ironman</button>
-            <button type="button" class="btn btn-dark">Captain America</button>
-            <button type="button" class="btn btn-dark">Thor</button>
-            <button type="button" class="btn btn-dark">Hulk</button>
-        </div>
-        <div class="btn-group-vertical">
-            <button type="button" class="btn btn-dark">Ironman</button>
-            <button type="button" class="btn btn-dark">Captain America</button>
-            <button type="button" class="btn btn-dark">Thor</button>
-            <button type="button" class="btn btn-dark">Hulk</button>
-        </div>
-        <div class="btn-group-vertical btn-group-sm">
-            <button type="button" class="btn btn-dark">Ironman</button>
-            <button type="button" class="btn btn-dark">Captain America</button>
-            <button type="button" class="btn btn-dark">Thor</button>
-            <button type="button" class="btn btn-dark">Hulk</button>
-        </div>
-        <hr>
-        <!-- Lists -->
-        <h2>Lists</h2>
-        <p>You can use the "list-group" class on a list and the "list-group-item" class on items. There are other
-            classes that can also be used and there are examples in the list below.</p>
-        <ul class="list-group">
-            <li class="list-group-item">First item</li>
-            <li class="list-group-item active">I have an "active" class!</li>
-            <li class="list-group-item disabled">I have a "disabled" class!</li>
-            <li class="list-group-item list-group-item-dark">I am dark! You can change dark to any other bootstrap
-                class color.</li>
-            <li class="list-group-item list-group-item-danger">I am danger! You can change dark to any other bootstrap
-                class color.</li>
-        </ul>
-        <p>To make a list of links you can put links in a div with the "list-group" class. Then add the
-            "list-group-item-action" to the links.</p>
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">First item</a>
-            <a href="#" class="list-group-item list-group-item-action">Second item</a>
-            <a href="#" class="list-group-item list-group-item-action">Third item</a>
-        </div>
-        <hr>
-        <!-- Collapsing -->
-        <h2>Collapsing</h2>
-        <p>In the example below there is a hidden div. It has the class of "collapse" so it does not initially appear
-            on the page. It could also have a class of "collapse show" which would make it appear at the start. It also
-            has an id of "demo" so it can be used with a button. </p>
-        <p>The button has an attribute called data-toggle which is set to "collapse" and a data-target attribute that
-            is set to "#demo". The data-target class is needed so the button knows what to show.</p>
-        <button data-toggle="collapse" data-target="#demo" class="btn btn btn-dark">Click me to show hidden text!</button>
+        <p>To make a Bootstrap blockquote you make a normal blockquote and you give it the class of "blockquote." Then
+            for the source you make a footer with the class of "blockquote-footer."</p>
+        <blockquote class="blockquote">
+            <p>Be not afraid of greatness: some are born great, some achieve greatness, and some have greatness thrust
+                upon them.</p>
+            <footer class="blockquote-footer">William Shakespeare</footer>
+            <!-- Buttons -->
+            <h2>Buttons</h2>
+            <p>There are many diffrent button options. To make a Bootstrap button you need to add the class of btn to a
+                button. There are also colors you can use with button classes. For example if you have a button with
+                the
+                class of "btn btn-primary" then that button will have a blue background and white text. Replacing
+                primary
+                with dark will make a dark button, light will make a white button, and danger will make a red button.</p>
+            <button type="button" class="btn">Basic</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-link">Link</button>
+            <p>The same classes can be used on a and input tags. </p>
+            <p>You can also assign classes like "btn btn-outline-primary" which will give you an outline in the color.</p>
+            <button type="button" class="btn btn-outline-primary">Primary Outline</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <p>To change button size you can use "btn-lg" and "btn-sm" to make buttons larger or smaller than their
+                original size.</p>
+            <button type="button" class="btn btn-dark btn-lg">Larger Dark</button>
+            <button type="button" class="btn btn-dark">Normal Dark</button>
+            <button type="button" class="btn btn-dark btn-sm">Smaller Dark</button>
+            <p> To make a button take up the entire width of the parent you can use the "btn-block" class.</p>
+            <button type="button" class="btn btn-secondary btn-block">Secondary Block</button>
+            <hr>
+            <!-- Button Groups -->
+            <h2>Button Groups</h2>
+            <p>Using the "btn-group" class on a div with buttons in it will create a block of buttons together!</p>
+            <div class="btn-group">
+                <button type="button" class="btn btn-dark">Ironman</button>
+                <button type="button" class="btn btn-dark">Captain America</button>
+                <button type="button" class="btn btn-dark">Thor</button>
+                <button type="button" class="btn btn-dark">Hulk</button>
+            </div>
+            <p>If you want them to stack on top of each other use the "btn-group-vertical" class.</p>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-dark">Ironman</button>
+                <button type="button" class="btn btn-dark">Captain America</button>
+                <button type="button" class="btn btn-dark">Thor</button>
+                <button type="button" class="btn btn-dark">Hulk</button>
+            </div>
+            <p>You can change the size of the button group by using the "btn-group-lg" and "btn-group-sm" classes.</p>
+            <div class="btn-group-vertical btn-group-lg">
+                <button type="button" class="btn btn-dark">Ironman</button>
+                <button type="button" class="btn btn-dark">Captain America</button>
+                <button type="button" class="btn btn-dark">Thor</button>
+                <button type="button" class="btn btn-dark">Hulk</button>
+            </div>
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-dark">Ironman</button>
+                <button type="button" class="btn btn-dark">Captain America</button>
+                <button type="button" class="btn btn-dark">Thor</button>
+                <button type="button" class="btn btn-dark">Hulk</button>
+            </div>
+            <div class="btn-group-vertical btn-group-sm">
+                <button type="button" class="btn btn-dark">Ironman</button>
+                <button type="button" class="btn btn-dark">Captain America</button>
+                <button type="button" class="btn btn-dark">Thor</button>
+                <button type="button" class="btn btn-dark">Hulk</button>
+            </div>
+            <hr>
+            <!-- Lists -->
+            <h2>Lists</h2>
+            <p>You can use the "list-group" class on a list and the "list-group-item" class on items. There are other
+                classes that can also be used and there are examples in the list below.</p>
+            <ul class="list-group">
+                <li class="list-group-item">First item</li>
+                <li class="list-group-item active">I have an "active" class!</li>
+                <li class="list-group-item disabled">I have a "disabled" class!</li>
+                <li class="list-group-item list-group-item-dark">I am dark! You can change dark to any other bootstrap
+                    class color.</li>
+                <li class="list-group-item list-group-item-danger">I am danger! You can change dark to any other
+                    bootstrap
+                    class color.</li>
+            </ul>
+            <p>To make a list of links you can put links in a div with the "list-group" class. Then add the
+                "list-group-item-action" to the links.</p>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">First item</a>
+                <a href="#" class="list-group-item list-group-item-action">Second item</a>
+                <a href="#" class="list-group-item list-group-item-action">Third item</a>
+            </div>
+            <hr>
+            <!-- Collapsing -->
+            <h2>Collapsing</h2>
+            <p>In the example below there is a hidden div. It has the class of "collapse" so it does not initially
+                appear
+                on the page. It could also have a class of "collapse show" which would make it appear at the start. It
+                also
+                has an id of "demo" so it can be used with a button. </p>
+            <p>The button has an attribute called data-toggle which is set to "collapse" and a data-target attribute
+                that
+                is set to "#demo". The data-target class is needed so the button knows what to show.</p>
+            <button data-toggle="collapse" data-target="#demo" class="btn btn btn-dark">Click me to show hidden text!</button>
 
-        <div id="demo" class="collapse">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, repudiandae rem? Unde autem
-                reiciendis dolore numquam voluptatibus veniam quo voluptas soluta facilis, doloremque quaerat mollitia
-                exodit sit sed nobis!</p>
-        </div>
-        <br>
-        <br>
-        <button data-toggle="collapse" data-target="#demo2" class="btn btn btn-dark">Click me to hide the text!</button>
+            <div id="demo" class="collapse">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, repudiandae rem? Unde autem
+                    reiciendis dolore numquam voluptatibus veniam quo voluptas soluta facilis, doloremque quaerat
+                    mollitia
+                    exodit sit sed nobis!</p>
+            </div>
+            <br>
+            <br>
+            <button data-toggle="collapse" data-target="#demo2" class="btn btn btn-dark">Click me to hide the text!</button>
 
-        <div id="demo2" class="collapse show">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, repudiandae rem? Unde autem
-                reiciendis dolore numquam voluptatibus veniam quo voluptas soluta facilis, doloremque quaerat mollitia
-                exodit sit sed nobis!</p>
-        </div>
-        <hr>
-        <!-- Cards -->
-        <h2>Cards</h2>
-        <p>The basic structure of a card has a header a body and a footer inside of a div with the class of "card."
-            There should be 3 divs in the container with the classes "card-header", "card-body", and "card-footer."</p>
-        <div class="card bg-dark text-white col-lg-3 col-md-3 col-sm-4 col-xs-12 inline">
-            <div class="card-header">I am the card-header!</div>
-            <div class="card-body">I am the card-body!</div>
-            <div class="card-footer">I am the card-footer!</div>
-        </div>
-        <p>This card has the class "bg-dark" which makes it have a dark background and it also has the class
-            "text-white" which give it white text.</p>
-        <p>To have a card with an image make a card div. Then put the image inside and then the card-body div. Inside
-            of the card body you should put the text.</p>
+            <div id="demo2" class="collapse show">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, repudiandae rem? Unde autem
+                    reiciendis dolore numquam voluptatibus veniam quo voluptas soluta facilis, doloremque quaerat
+                    mollitia
+                    exodit sit sed nobis!</p>
+            </div>
+            <hr>
+            <!-- Cards -->
+            <h2>Cards</h2>
+            <p>The basic structure of a card has a header a body and a footer inside of a div with the class of "card."
+                There should be 3 divs in the container with the classes "card-header", "card-body", and "card-footer."</p>
+            <div class="card bg-dark text-white col-lg-3 col-md-3 col-sm-4 col-xs-12 inline">
+                <div class="card-header">I am the card-header!</div>
+                <div class="card-body">I am the card-body!</div>
+                <div class="card-footer">I am the card-footer!</div>
+            </div>
+            <p>This card has the class "bg-dark" which makes it have a dark background and it also has the class
+                "text-white" which give it white text.</p>
+            <p>To have a card with an image make a card div. Then put the image inside and then the card-body div.
+                Inside
+                of the card body you should put the text.</p>
 
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="../Images/Man.jpeg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">Some example text.</p>
-                <a href="#" class="btn btn-primary">See Profile</a>
-            </div>
-        </div>
-        <hr>
-        <!-- Card Decks -->
-        <h2>Card Decks</h2>
-        <p>In a card deck all of the cards are placed next to each other with padding between them. To make one you put
-            a few cards into a div with the class of
-            "card-deck."</p>
-        <div class="card-deck">
             <div class="card" style="width:400px">
                 <img class="card-img-top" src="../Images/Man.jpeg" alt="Card image">
-                <div class="card-body bg-light">
+                <div class="card-body">
                     <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam harum
-                        sapiente explicabo illum temporibus fugit! Optio, quaerat recusandae expedita distinctio
-                        impedit, dolor libero non tenetur nostrum fugiat, quia ab?</p>
-                    <a href="#" class="btn btn-dark">Button</a>
+                    <p class="card-text">Some example text.</p>
+                    <a href="#" class="btn btn-primary">See Profile</a>
                 </div>
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../Images/Woman.jpeg" alt="Card image">
-                <div class="card-body bg-dark text-white">
-                    <h4 class="card-title">Jane Doe</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam recusandae
-                        ratione totam porro, mollitia molestias, officia autem blanditiis nobis esse voluptatibus
-                        perferendis laudantium exercitationem at incidunt eaque fugit sit deserunt?</p>
-                    <a href="#" class="btn btn-light">Button</a>
+            <hr>
+            <!-- Card Decks -->
+            <h2>Card Decks</h2>
+            <p>In a card deck all of the cards are placed next to each other with padding between them. To make one you
+                put
+                a few cards into a div with the class of
+                "card-deck."</p>
+            <div class="card-deck">
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="../Images/Man.jpeg" alt="Card image">
+                    <div class="card-body bg-light">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam
+                            harum
+                            sapiente explicabo illum temporibus fugit! Optio, quaerat recusandae expedita distinctio
+                            impedit, dolor libero non tenetur nostrum fugiat, quia ab?</p>
+                        <a href="#" class="btn btn-dark">Button</a>
+                    </div>
+                </div>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="../Images/Woman.jpeg" alt="Card image">
+                    <div class="card-body bg-dark text-white">
+                        <h4 class="card-title">Jane Doe</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            recusandae
+                            ratione totam porro, mollitia molestias, officia autem blanditiis nobis esse voluptatibus
+                            perferendis laudantium exercitationem at incidunt eaque fugit sit deserunt?</p>
+                        <a href="#" class="btn btn-light">Button</a>
+                    </div>
+                </div>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="../Images/Man.jpeg" alt="Card image">
+                    <div class="card-body bg-light">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam
+                            harum
+                            sapiente explicabo illum temporibus fugit! Optio, quaerat recusandae expedita distinctio
+                            impedit, dolor libero non tenetur nostrum fugiat, quia ab?</p>
+                        <a href="#" class="btn btn-dark">Button</a>
+                    </div>
                 </div>
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../Images/Man.jpeg" alt="Card image">
-                <div class="card-body bg-light">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam harum
-                        sapiente explicabo illum temporibus fugit! Optio, quaerat recusandae expedita distinctio
-                        impedit, dolor libero non tenetur nostrum fugiat, quia ab?</p>
-                    <a href="#" class="btn btn-dark">Button</a>
+            <hr>
+            <!-- Card Groups -->
+            <h2>Card Groups</h2>
+            <p>In a card group all of the cards are connected. To make one you put a few cards into a div with the
+                class of
+                "card-group."</p>
+            <div class="card-group">
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="../Images/Man.jpeg" alt="Card image">
+                    <div class="card-body bg-light">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam
+                            harum
+                            sapiente explicabo illum temporibus fugit! Optio, quaerat recusandae expedita distinctio
+                            impedit, dolor libero non tenetur nostrum fugiat, quia ab?</p>
+                        <a href="#" class="btn btn-dark">Button</a>
+                    </div>
+                </div>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="../Images/Woman.jpeg" alt="Card image">
+                    <div class="card-body bg-dark text-white">
+                        <h4 class="card-title">Jane Doe</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+                            recusandae
+                            ratione totam porro, mollitia molestias, officia autem blanditiis nobis esse voluptatibus
+                            perferendis laudantium exercitationem at incidunt eaque fugit sit deserunt?</p>
+                        <a href="#" class="btn btn-light">Button</a>
+                    </div>
+                </div>
+                <div class="card" style="width:400px">
+                    <img class="card-img-top" src="../Images/Man.jpeg" alt="Card image">
+                    <div class="card-body bg-light">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam
+                            harum
+                            sapiente explicabo illum temporibus fugit! Optio, quaerat recusandae expedita distinctio
+                            impedit, dolor libero non tenetur nostrum fugiat, quia ab?</p>
+                        <a href="#" class="btn btn-dark">Button</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <!-- Card Groups -->
-        <h2>Card Groups</h2>
-        <p>In a card group all of the cards are connected. To make one you put a few cards into a div with the class of
-            "card-group."</p>
-        <div class="card-group">
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../Images/Man.jpeg" alt="Card image">
-                <div class="card-body bg-light">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam harum
-                        sapiente explicabo illum temporibus fugit! Optio, quaerat recusandae expedita distinctio
-                        impedit, dolor libero non tenetur nostrum fugiat, quia ab?</p>
-                    <a href="#" class="btn btn-dark">Button</a>
-                </div>
-            </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../Images/Woman.jpeg" alt="Card image">
-                <div class="card-body bg-dark text-white">
-                    <h4 class="card-title">Jane Doe</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam recusandae
-                        ratione totam porro, mollitia molestias, officia autem blanditiis nobis esse voluptatibus
-                        perferendis laudantium exercitationem at incidunt eaque fugit sit deserunt?</p>
-                    <a href="#" class="btn btn-light">Button</a>
-                </div>
-            </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../Images/Man.jpeg" alt="Card image">
-                <div class="card-body bg-light">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quibusdam harum
-                        sapiente explicabo illum temporibus fugit! Optio, quaerat recusandae expedita distinctio
-                        impedit, dolor libero non tenetur nostrum fugiat, quia ab?</p>
-                    <a href="#" class="btn btn-dark">Button</a>
-                </div>
-            </div>
-        </div>
 
 
     </div>
