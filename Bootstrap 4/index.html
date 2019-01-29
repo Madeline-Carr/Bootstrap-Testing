@@ -185,6 +185,17 @@
             <div class="alert alert-danger">
                 I have the "alert" class and the "alert-danger" class.
             </div>
+            <h3>Closing Alerts</h3>
+            <p>To close an alert you can add an x button. To do that make an alert with the class of "alert" and
+                "alert-dismissible." Then inside of that div make a button with the class of "close" and the
+                data-dismiss set to "alert." You can also add the "fade" or "show" classes to edit how it appears or
+                disappears.</p>
+            <p>In the button you should write "&times." This is better than just using an x. </p>
+
+            <div class="alert alert-dismissible alert-dark">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <p>I am an alert! </p>
+            </div>
 
             <!-- Lists -->
             <h2>Lists</h2>
