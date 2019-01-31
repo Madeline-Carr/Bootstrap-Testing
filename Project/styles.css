@@ -5,6 +5,8 @@
     text-align: center;
     box-shadow: 0px 5px 15px rgb(134, 134, 134);
     margin: 0px;
+    background-image: url("../Images/black.jpeg");
+    opacity: 01.99999;
 }
 .jumbotron h3{
     color: #777;
