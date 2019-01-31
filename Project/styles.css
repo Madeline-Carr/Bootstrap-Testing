@@ -4,6 +4,7 @@
     border-radius: 0px;
     text-align: center;
     box-shadow: 0px 5px 15px rgb(134, 134, 134);
+    margin: 0px;
 }
 .jumbotron h3{
     color: #777;
@@ -14,8 +15,21 @@
     background-color: #111;
     box-shadow: 0px 5px 15px rgb(134, 134, 134);
     padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 .light-section{
     color: #111;
     background-color: white;
+    margin-bottom: 20px;
+}
+.navbar{
+    background-color: #111;
+}
+a{
+    color: #777;
+}
+a:hover{
+    background-color: white;
+    color: black;
 }
