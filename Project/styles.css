@@ -2,4 +2,20 @@
     background-color: #111;
     color: white;
     border-radius: 0px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgb(134, 134, 134);
+}
+.jumbotron h3{
+    color: #777;
+}
+
+.dark-section{
+    color: white;
+    background-color: #111;
+    box-shadow: 0px 5px 15px rgb(134, 134, 134);
+    padding-top: 20px;
+}
+.light-section{
+    color: #111;
+    background-color: white;
 }
