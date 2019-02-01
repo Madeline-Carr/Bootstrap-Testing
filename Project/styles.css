@@ -1,3 +1,4 @@
+/*Jumbotron*/
 .jumbotron{
     background-color: #111;
     color: white;
@@ -10,6 +11,7 @@
 .jumbotron h3{
     color: #777;
 }
+/*Main Section*/
 
 .dark-section{
     color: white;
@@ -24,6 +26,8 @@
     background-color: white;
     margin-bottom: 20px;
 }
+/*Navigation and Links*/
+
 .navbar{
     background-color: #111;
 }
@@ -34,11 +38,13 @@ a:hover{
     background-color: white;
     color: black;
 }
+/*Cards*/
 
 .card-body{
     background-color: #111;
     color: white;
 }
+/*Typography*/
 
 blockquote{
     background-color: white;
