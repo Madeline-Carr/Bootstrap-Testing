@@ -39,3 +39,10 @@ a:hover{
     background-color: #111;
     color: white;
 }
+
+blockquote{
+    background-color: white;
+    color: #111;
+    padding: 10px;
+    border-radius: 12px;
+}
