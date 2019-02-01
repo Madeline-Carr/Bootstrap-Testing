@@ -26,6 +26,14 @@
     background-color: white;
     margin-bottom: 20px;
 }
+/*Photos*/
+
+img{
+    filter: grayscale(100%);
+}
+img:hover{
+    filter: grayscale(0%);
+}
 /*Navigation and Links*/
 
 .navbar{
