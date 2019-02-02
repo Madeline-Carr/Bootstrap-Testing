@@ -1,0 +1,58 @@
+/*Jumbotron*/
+.jumbotron {
+  background-color: #111;
+  color: white;
+  border-radius: 0px;
+  text-align: center;
+  box-shadow: 0px 5px 15px #868686;
+  margin: 0px;
+  background-image: url("../Images/black.jpeg"); }
+
+.jumbotron h3 {
+  color: #777; }
+
+/*Main Section*/
+.dark-section {
+  color: white;
+  background-color: #111;
+  box-shadow: 0px 5px 15px #868686;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+
+.light-section {
+  color: #111;
+  background-color: white;
+  margin-bottom: 20px; }
+
+/*Photos*/
+img {
+  filter: grayscale(100%); }
+
+img:hover {
+  filter: grayscale(0%); }
+
+/*Navigation and Links*/
+.navbar {
+  background-color: #111; }
+
+a {
+  color: #777; }
+
+a:hover {
+  background-color: white;
+  color: black; }
+
+/*Cards*/
+.card-body {
+  background-color: #111;
+  color: white; }
+
+/*Typography*/
+blockquote {
+  background-color: white;
+  color: #111;
+  padding: 10px;
+  border-radius: 12px; }
+
+/*# sourceMappingURL=styles.css.map */
