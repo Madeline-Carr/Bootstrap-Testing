@@ -9,10 +9,11 @@
     box-shadow: 0px 5px 15px $light-color;
     margin: 0px;
     background-image: url("../Images/black.jpeg");
+    h3{
+        color: $light-color;
+    }
 }
-.jumbotron h3{
-    color: $light-color;
-}
+
 /*Main Section*/
 
 .dark-section{
@@ -40,14 +41,15 @@ img:hover{
 
 .navbar{
     background-color: $dark-color;
+    a{
+        color: $light-color;
+    }
+    a:hover{
+        background-color: white;
+        color: $dark-color;
+    }
 }
-a{
-    color: $light-color;
-}
-a:hover{
-    background-color: white;
-    color: $dark-color;
-}
+
 /*Cards*/
 
 .card-body{
