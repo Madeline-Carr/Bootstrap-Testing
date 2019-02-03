@@ -1,21 +1,23 @@
+/*Fonts*/
+/*Colors*/
 /*Jumbotron*/
 .jumbotron {
   background-color: #111;
   color: white;
   border-radius: 0px;
   text-align: center;
-  box-shadow: 0px 5px 15px #868686;
+  box-shadow: 0px 5px 15px #888;
   margin: 0px;
   background-image: url("../Images/black.jpeg"); }
 
 .jumbotron h3 {
-  color: #777; }
+  color: #888; }
 
 /*Main Section*/
 .dark-section {
   color: white;
   background-color: #111;
-  box-shadow: 0px 5px 15px #868686;
+  box-shadow: 0px 5px 15px #888;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px; }
@@ -37,11 +39,11 @@ img:hover {
   background-color: #111; }
 
 a {
-  color: #777; }
+  color: #888; }
 
 a:hover {
   background-color: white;
-  color: black; }
+  color: #111; }
 
 /*Cards*/
 .card-body {

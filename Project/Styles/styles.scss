@@ -1,28 +1,30 @@
+// sass --watch Project/Styles/styles.scss:Project/Styles/styles.css
+@import 'variables';
 /*Jumbotron*/
 .jumbotron{
-    background-color: #111;
+    background-color: $dark-color;
     color: white;
     border-radius: 0px;
     text-align: center;
-    box-shadow: 0px 5px 15px rgb(134, 134, 134);
+    box-shadow: 0px 5px 15px $light-color;
     margin: 0px;
     background-image: url("../Images/black.jpeg");
 }
 .jumbotron h3{
-    color: #777;
+    color: $light-color;
 }
 /*Main Section*/
 
 .dark-section{
     color: white;
-    background-color: #111;
-    box-shadow: 0px 5px 15px rgb(134, 134, 134);
+    background-color: $dark-color;
+    box-shadow: 0px 5px 15px $light-color;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
 }
 .light-section{
-    color: #111;
+    color: $dark-color;
     background-color: white;
     margin-bottom: 20px;
 }
@@ -37,26 +39,26 @@ img:hover{
 /*Navigation and Links*/
 
 .navbar{
-    background-color: #111;
+    background-color: $dark-color;
 }
 a{
-    color: #777;
+    color: $light-color;
 }
 a:hover{
     background-color: white;
-    color: black;
+    color: $dark-color;
 }
 /*Cards*/
 
 .card-body{
-    background-color: #111;
+    background-color: $dark-color;
     color: white;
 }
 /*Typography*/
 
 blockquote{
     background-color: white;
-    color: #111;
+    color: $dark-color;
     padding: 10px;
     border-radius: 12px;
 }
